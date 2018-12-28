@@ -1,5 +1,4 @@
 const body = document.querySelector('body');
-
 const imgNum = 5;
 
 function paintImage(imgNum) {

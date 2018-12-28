@@ -1,0 +1,61 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box; color: #fff;
+}
+body{
+    background-color: #2980b9;
+}
+.wrap{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    font-size: 1.3rem;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.js_clock, .name_form, .greetings, .todo{
+    display: none;
+    text-align: center;
+}
+.todo{
+    margin-top: 30px;
+}
+.showing{
+    display: block;
+}
+.weather, .js_todo_list{
+    text-align: center;
+}
+.weather{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.js_todo_list > li > button{
+    border: 0;
+    background: 0;
+    cursor: pointer;
+}
+input{
+    border: 0;
+    background: 0;
+    border-bottom: 3px solid #fff;
+    text-align: center; 
+}
+
+.bg_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    animation: fadeIn .5s linear;
+}
